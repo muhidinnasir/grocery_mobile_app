@@ -1,9 +1,9 @@
-
 # grocery_mobile_app_for_interview
 
 ### Application structure
+
 After successful build, your application structure should look like this:
-                    
+
 ```
 .
 ├── android                         - It contains files required to run the application on an Android platform.
@@ -20,17 +20,10 @@ After successful build, your application structure should look like this:
     └── theme                       - It contains app theme and decoration classes
     └── widgets                     - It contains all custom widget classes
 ```
+
 ### How to format your code?
 
 - if your code is not formatted then run following command in your terminal to format code
   ```
   dart format .
   ```
-
-### How you can improve code readability?
-
-Resolve the errors and warnings that are shown in the application.
-
-### Support
-
-If you have any problems or questions, go to our Discord channel, where we will help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
