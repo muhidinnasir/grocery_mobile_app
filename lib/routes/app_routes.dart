@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/onboardingzero_screen/onboardingzero_screen.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/signin_screen/signin_screen.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/home_container_screen/home_container_screen.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/itemdetails_screen/itemdetails_screen.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/thank_you_screen/thank_you_screen.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/favorite_screen/favorite_screen.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/app_navigation_screen/app_navigation_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/onboardingzero_screen/onboardingzero_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/signin_screen/signin_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/home_container_screen/home_container_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/itemdetails_screen/itemdetails_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/thank_you_screen/thank_you_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/favorite_screen/favorite_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/app_navigation_screen/app_navigation_screen.dart';
 
 class AppRoutes {
   static const String onboardingzeroScreen = '/onboardingzero_screen';

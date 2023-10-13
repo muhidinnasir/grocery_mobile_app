@@ -5,6 +5,5 @@ abstract class ProductListEvent {
 }
 
 class GetNewProductList extends ProductListEvent {
-  final String vendorId;
-  const GetNewProductList({required this.vendorId});
+  const GetNewProductList();
 }

@@ -52,21 +52,6 @@ class AppDecoration {
             1,
           ),
         ),
-        boxShadow: [
-          BoxShadow(
-            color: appTheme.black900.withOpacity(0.26),
-            spreadRadius: getHorizontalSize(
-              2,
-            ),
-            blurRadius: getHorizontalSize(
-              2,
-            ),
-            offset: Offset(
-              9,
-              0,
-            ),
-          ),
-        ],
       );
   static BoxDecoration get fill3 => BoxDecoration(
         color: appTheme.gray200,

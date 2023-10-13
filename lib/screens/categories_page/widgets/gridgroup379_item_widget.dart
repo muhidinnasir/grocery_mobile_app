@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:grocery_mobile_app_for_interview/core/app_export.dart';
 
 // ignore: must_be_immutable
-class Gridgroup379ItemWidget extends StatelessWidget {
-  const Gridgroup379ItemWidget({Key? key})
+class CategoriesItemWidget extends StatelessWidget {
+  const CategoriesItemWidget({Key? key})
       : super(
           key: key,
         );
@@ -12,9 +12,7 @@ class Gridgroup379ItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: getPadding(
-        left: 33,
         top: 15,
-        right: 33,
         bottom: 15,
       ),
       decoration: AppDecoration.outline.copyWith(

@@ -44,7 +44,7 @@ class CustomBottomBarState extends State<CustomBottomBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 106,
+      height: 90,
       decoration: BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer.withOpacity(1),
       ),
@@ -60,8 +60,8 @@ class CustomBottomBarState extends State<CustomBottomBar> {
             icon: Container(
               padding: getPadding(
                 left: 26,
-                top: 21,
-                right: 26,
+                top: 5,
+                right: 10,
               ),
               decoration: AppDecoration.fill1,
               child: CustomImageView(

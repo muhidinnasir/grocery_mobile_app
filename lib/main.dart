@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.standard,
       ),
-      title: 'grocery_mobile_app_for_interview',
+      title: 'Grocery',
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.onboardingzeroScreen,
       routes: AppRoutes.routes,

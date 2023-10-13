@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_mobile_app_for_interview/core/app_export.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/categories_page/categories_page.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/home_page/home_page.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/itemdetails_screen/itemdetails_screen.dart';
-import 'package:grocery_mobile_app_for_interview/presentation/shoppingcart_page/shoppingcart_page.dart';
+import 'package:grocery_mobile_app_for_interview/screens/categories_page/categories_page.dart';
+import 'package:grocery_mobile_app_for_interview/screens/favorite_screen/favorite_screen.dart';
+import 'package:grocery_mobile_app_for_interview/screens/home_page/home_page.dart';
+import 'package:grocery_mobile_app_for_interview/screens/shoppingcart_page/shoppingcart_page.dart';
 import 'package:grocery_mobile_app_for_interview/widgets/custom_bottom_bar.dart';
 
 // ignore_for_file: must_be_immutable
@@ -18,12 +18,16 @@ class HomeContainerScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
             body: Navigator(
-                key: navigatorKey,
-                initialRoute: AppRoutes.homePage,
-                onGenerateRoute: (routeSetting) => PageRouteBuilder(
-                    pageBuilder: (ctx, ani, ani1) =>
-                        getCurrentPage(routeSetting.name!),
-                    transitionDuration: Duration(seconds: 0))),
+              key: navigatorKey,
+              initialRoute: AppRoutes.homePage,
+              onGenerateRoute: (routeSetting) => PageRouteBuilder(
+                pageBuilder: (ctx, ani, ani1) =>
+                    getCurrentPage(routeSetting.name!),
+                transitionDuration: Duration(
+                  seconds: 0,
+                ),
+              ),
+            ),
             bottomNavigationBar:
                 CustomBottomBar(onChanged: (BottomBarEnum type) {
               Navigator.pushNamed(
@@ -57,8 +61,10 @@ class HomeContainerScreen extends StatelessWidget {
         return ShoppingcartPage();
       case AppRoutes.categoriesPage:
         return CategoriesPage();
+      case AppRoutes.favoriteScreen:
+        return FavoriteScreen();
       default:
-        return HomePage();
+        return Container();
     }
   }
 

@@ -9,7 +9,8 @@ class ProductListInitial extends ProductListState {}
 class ProductListLoading extends ProductListState {}
 
 class ProductListLoaded extends ProductListState {
-  const ProductListLoaded();
+  final ProductMoel? orderModel;
+  const ProductListLoaded(this.orderModel);
 }
 
 class ProductListError extends ProductListState {

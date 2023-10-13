@@ -22,24 +22,19 @@ class CategoriesPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                  padding: getPadding(top: 9, bottom: 9),
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: fs.Svg(ImageConstant.imgHeader),
-                          fit: BoxFit.cover)),
-                  child: CustomAppBar(
-                      height: getVerticalSize(50),
-                      leadingWidth: 52,
-                      leading: AppbarImage(
-                          height: getVerticalSize(22),
-                          width: getHorizontalSize(24),
-                          svgPath: ImageConstant.imgArrowleft,
-                          margin: getMargin(left: 28, bottom: 17),
-                          onTap: () {
-                            onTapArrowleft(context);
-                          }),
-                      centerTitle: true,
-                      title: AppbarTitle(text: "Categories"))),
+                padding: getPadding(top: 9, bottom: 9),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: fs.Svg(ImageConstant.imgHeader),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: CustomAppBar(
+                  height: getVerticalSize(50),
+                  centerTitle: true,
+                  title: AppbarTitle(text: "Categories"),
+                ),
+              ),
               Expanded(
                 child: Padding(
                   padding: getPadding(left: 36, top: 16, right: 36),
@@ -53,7 +48,7 @@ class CategoriesPage extends StatelessWidget {
                     physics: BouncingScrollPhysics(),
                     itemCount: 8,
                     itemBuilder: (context, index) {
-                      return Gridgroup379ItemWidget();
+                      return CategoriesItemWidget();
                     },
                   ),
                 ),

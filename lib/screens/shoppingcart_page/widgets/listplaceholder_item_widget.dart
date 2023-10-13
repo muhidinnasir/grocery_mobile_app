@@ -47,13 +47,13 @@ class ListplaceholderItemWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
-                  "",
+                  "FRUITS",
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.left,
                   style: CustomTextStyles.labelLargeBlack900,
                 ),
                 Text(
-                  "",
+                  "Banana",
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.left,
                   style: CustomTextStyles.titleMediumBlack900Medium_1,
@@ -70,7 +70,7 @@ class ListplaceholderItemWidget extends StatelessWidget {
                           bottom: 3,
                         ),
                         child: Text(
-                          "",
+                          "\$3",
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.left,
                           style: CustomTextStyles.titleMediumMedium,
@@ -115,7 +115,7 @@ class ListplaceholderItemWidget extends StatelessWidget {
                                 left: 25,
                               ),
                               child: Text(
-                                "",
+                                "6",
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.left,
                                 style: CustomTextStyles.titleLargeMedium,
